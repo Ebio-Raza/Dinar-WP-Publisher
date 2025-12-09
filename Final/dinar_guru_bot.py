@@ -95,7 +95,7 @@ def extract_posts_soup():
 
     driver.get("https://www.dinarguru.com/")
 
-    # Get the full page HTML
+    # Get the full page HTML content
     full_html_content = driver.page_source
 
     # Parse and prettify
