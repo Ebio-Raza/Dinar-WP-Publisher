@@ -28,7 +28,7 @@ def extract_posts_in_list(content_html=None, soup=None):
         date_text = match.group(1).strip()
         title_text = match.group(2).strip()
 
-        # Content starts after this match
+        # Content starts after this match 
         content_start = match.end()
 
         # Content ends at the start of the next post or end of document
