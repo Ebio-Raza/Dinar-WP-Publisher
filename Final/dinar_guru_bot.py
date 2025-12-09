@@ -107,7 +107,7 @@ def extract_posts_soup():
 
     posts_content_html = str(posts_element)
     posts_content_html = re.sub(
-        r"[\u00A0\u200B\u200C\u200D\uFEFF]", "", posts_content_html
+        r"[\u00A0\u200B\u200C\u200D\uFEFF]", " ", posts_content_html
     )
 
     soup = BeautifulSoup(posts_content_html, "html.parser")
