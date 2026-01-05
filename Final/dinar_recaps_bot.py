@@ -106,8 +106,8 @@ def add_html_content_to_posts(posts, driver, date=None):
             # If only one block exists, use it (no exclusion needed)
             merged_html = blocks[0].decode_contents()
 
-        # Add content to the post dictionary
-        post["content"] = merged_html
+        # Add content to the post dictionary (remove newlines)
+        post["content"] = merged_html.replace("\n", "")
 
     return posts
 
